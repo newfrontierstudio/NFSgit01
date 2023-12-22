@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>NEWFRONTIERSTUDIO</title>
+<link rel=”icon” href="favicon.ico" id="favicon" sizes="any">
+<meta name="description"  content=Moving Picture Studio>
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+<link rel="stylesheet" type="text/css" href="01.css">
+<link rel="stylesheet" type="text/css" href="02.css">
+</head>
+
+<body>
+<header id="header">
+  <h1>NEWFRONTIERSTUDIO</h1>
+    <div id="video-area">
+  <video id="video" poster="blackflame.jpg" webkit-playsinline playsinline muted autoplay loop>
+    <!--
+        poster：動画ファイルが利用できない環境で代替表示される画像
+        webkit-playsinline：iOS 9までのSafari用インライン再生指定
+        playsinline：iOS 10以降のSafari用インライン再生指定
+        muted：音声をミュートさせる
+        autoplay：動画を自動再生させる
+        loop：動画をループさせる
+        controls：コントロールバーを表示する
+    -->
+  <source src="theblackflame01.mp4" type="video/mp4">
+  <p>動画を再生できる環境ではありません。</p>
+  </video>
+    <!--/video-area--></div>
+</header>
+<div id="container">
+<p>NEWFRONTIERSTUDIO</p>  
+<!--/container--></div> 
+</body>
+</html>
